@@ -1,0 +1,1 @@
+# Licensephobia - don't be afraid of licenses!
