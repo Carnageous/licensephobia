@@ -26,5 +26,7 @@ module.exports = {
     'no-param-reassign': ['off'],
     'object-curly-newline': ['off'],
     'guard-for-in': ['off'],
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': ['error'],
   },
 };
