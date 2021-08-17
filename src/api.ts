@@ -1,5 +1,5 @@
 import KoaRouter from 'koa-router';
-import LicenseChecker from './apis/fileHandler';
+import LicenseChecker from './apis/licenseChecker';
 
 export default class Api {
   public static createRoutes(): KoaRouter<any, {}> {
