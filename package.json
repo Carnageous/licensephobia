@@ -23,6 +23,7 @@
   "homepage": "https://github.com/roulzhq/licensephobia#readme",
   "dependencies": {
     "@koa/cors": "^3.1.0",
+    "axios": "^0.24.0",
     "koa": "^2.13.1",
     "koa-bodyparser": "^4.3.0",
     "koa-router": "^10.0.0"

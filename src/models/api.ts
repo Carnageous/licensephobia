@@ -1,4 +1,4 @@
-import { Licenses } from './licenses';
+import { LicenseString } from './licenses';
 
 // eslint-disable-next-line import/prefer-default-export
 export namespace LicenseCheck {
@@ -11,11 +11,16 @@ export namespace LicenseCheck {
 
   export interface PackageResult {
     found: boolean;
+    name: string;
+    description: string;
     url: string;
-    version: string;
+    version: {
+      used: string,
+      latest: string,
+    };
     license: {
       found: boolean;
-      type: Licenses;
+      type: LicenseString;
     }
   }
 
@@ -31,9 +36,7 @@ export namespace LicenseCheck {
 
   export interface Response {
     type: PackageManager;
-    packages: {
-      [name: string]: PackageResult;
-    },
+    packages: PackageResult[]
     error: Error | null;
   }
 }

@@ -10,7 +10,7 @@ export default class LicenseChecker {
 
     Logger.info('Recieved npm license info request.');
 
-    const response: LicenseCheck.Response = packageJsonToLicenseResponse(body);
+    const response: LicenseCheck.Response = await packageJsonToLicenseResponse(body);
 
     context.response.status = 200;
     context.response.body = response;

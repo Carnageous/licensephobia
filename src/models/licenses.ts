@@ -1,1 +1,1 @@
-export type Licenses = 'MIT' | 'GPL' | 'CC'
+export type LicenseString = 'MIT' | 'GPL' | 'CC'
